@@ -1,0 +1,24 @@
+{
+  "name": "clean-code-rule-toolkit",
+  "version": "1.0.0",
+  "description": "clean",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "keywords": [
+    "clean code rule toolkit",
+    "rules"
+  ],
+  "author": "jgjgill",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.6",
+    "@types/node": "^20.14.9",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.2"
+  }
+}
