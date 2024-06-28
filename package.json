@@ -1,6 +1,6 @@
 {
   "name": "clean-code-rule-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "clean",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
