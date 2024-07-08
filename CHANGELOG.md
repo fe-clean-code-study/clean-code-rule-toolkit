@@ -1,5 +1,11 @@
 # clean-code-rule-toolkit
 
+## 1.0.5
+
+### Patch Changes
+
+- add tests and lotto rules
+
 ## 1.0.4
 
 ### Patch Changes
