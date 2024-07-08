@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Clean Code Rule Toolkit",
   description: "Clean Code Study",
+  base: "/clean-code-rule-toolkit/",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
