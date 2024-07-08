@@ -5,14 +5,39 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts"
+      }
+    },
+    "./jgjgill": {
+      "import": {
+        "types": "./dist/jgjgill/index.d.mts",
+        "default": "./dist/jgjgill/index.mjs"
+      },
+      "require": {
+        "types": "./dist/jgjgill/index.d.ts",
+        "default": "./dist/jgjgill/index.js"
+      }
+    }
+  },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup && ./.scripts/postbuild.sh",
     "release": "pnpm run build && changeset publish",
     "lint": "tsc"
   },
   "keywords": [
     "clean code rule toolkit",
     "rules"
+  ],
+  "files": [
+    "dist",
+    "*.d.ts"
   ],
   "author": "jgjgill",
   "license": "ISC",

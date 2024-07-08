@@ -1,1 +1,1 @@
-export * from "./jgjgill";
+export * from "./jgjgill/index.ts";

@@ -1,3 +1,3 @@
-export { add } from "./add";
-export { random } from "./random";
-export { rockPaperScissorsMoving } from "./rock-paper-scissors";
+export { add } from "./add.ts";
+export { random } from "./random.ts";
+export { rockPaperScissorsMoving } from "./rock-paper-scissors.ts";
