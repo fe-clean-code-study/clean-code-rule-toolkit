@@ -6,6 +6,7 @@ export function rockPaperScissorsMoving(
 ): number {
   const 가위바위보_인덱스 = Math.floor(Math.random() * 3);
   const 시스템_선택 = 가위바위보[가위바위보_인덱스];
+  console.log(가위바위보_인덱스, 123123);
 
   const 무승부 = 유저_선택 === 시스템_선택;
   const 승리 =
